@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cornhole League</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="cornhole.js" defer></script>
+    <script src="profile.js"  defer></script>
+</head>
+
+<body>
+    <button id="back-button" onclick = "goBack()">Back</button>
+    <div class="search-bar-container">
+        <input type="text" id="search-input" placeholder="Search users..." autocomplete="off" />
+        <div id="search-suggestions" class="suggestions-box"></div>
+    </div>
+    <h1>Profile</h1>
+    <a href="./submit_match.html"><button>Submit Match</button></a>
+    <a href="./leagues.html"><button>Leagues</button></a>
+    <button id="log-out-button"><a href="./index.html">Log Out</a></button>
+    <form id="profile-form" style="display: none;" onsubmit="saveProfile(event)">
+        <label for="edit-username">Username:</label>
+        <input type="text" id="edit-username" class="log"><br>
+
+        <label for="edit-location">Location:</label>
+        <input type="text" id="edit-location" class="log"><br>
+
+        <label for="edit-bio">Bio:</label>
+        <textarea id="edit-bio" class="log"></textarea><br>
+
+        <label for="edit-profile-img">Profile Image URL:</label>
+        <input type="text" id="edit-profile-img" class="log"><br>
+
+        <label for="edit-password">New Password (optional):</label>
+        <input type="password" id="edit-password" class="log"><br>
+
+        <button type="submit">Save Profile</button>
+    </form>
+
+
+
+    <button onclick="toggleEditMode()" class="edit-button">Edit Profile</button>
+
+    <a id="matches-link"><button>Match History</button> </a>
+
+    <img id="profile-img" src="https://m.media-amazon.com/images/I/91njXdEsC3L._AC_UF1000,1000_QL80_.jpg">
+    <br>
+    <h2 class="name" id="name">Zac Conti</h2>
+    <p class="loco" id="loco">location</p>
+    <br>
+    <p class="bio" id="bio">bio</p>
+    <br>
+    <div id="match-history"></div>
+</body>
+
+</html>

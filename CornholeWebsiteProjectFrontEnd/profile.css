@@ -1,0 +1,81 @@
+h1 {
+  text-align: center;
+  color: green;
+}
+
+html {
+  background-color: darkslategray;
+  background-image: url("/frontend/background.jpeg");
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 10%;
+  aspect-ratio: 1/1;
+  border-color: black;
+  border-radius: 50%;
+}
+
+a {
+  display: block;
+  text-align: center;
+}
+
+#name {
+  text-align: center;
+  margin: auto;
+}
+
+#loco {
+  text-align: center;
+  margin: auto;
+  font-size: small;
+}
+
+#bio {
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+
+#matches-links {
+  margin: 5px 5px 5px 5px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  background-color: green;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+a button,
+button {
+  width: 30%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#back-button {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  font-size: 20px;
+  color: darkolivegreen;
+  background: none;
+  border: none;
+}
+
+#log-out-button {
+  position: absolute;
+  right: 40px;
+  font-size: 18px;
+  top: 10px;
+  color: rgb(79, 107, 31);
+  background: none;
+  border: none;
+}

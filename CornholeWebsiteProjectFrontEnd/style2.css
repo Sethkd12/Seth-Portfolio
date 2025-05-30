@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+  color: green;
+}
+
+html {
+  background-color: darkslategray;
+  background-image : url("/frontend/background.jpeg");
+}
+
+input {
+  text-align: center;
+  float: right;
+}
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button a:active {
+  color: white;
+  text-decoration: none;
+}
+
+
+.user {
+  display: flex;
+}
+
+.pass {
+  display: flex;
+}
+
+button {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  float: left;
+  color: greenyellow;
+}

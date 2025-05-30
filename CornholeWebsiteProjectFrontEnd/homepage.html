@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>All Cornhole Matches</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="matches.css"/>
+  <script src="cornhole.js" defer></script>
+  <script src="homepage.js" defer></script>
+</head>
+<body>
+  <!-- Profile button -->
+  <button id="profile-button" onclick="goToProfile()">
+    My Profile
+  </button>
+
+  <div class="search-bar-container">
+    <input id="search-input" placeholder="Search users…" autocomplete="off"/>
+    <div id="search-suggestions" class="suggestions-box"></div>
+  </div>
+
+  <h1>Home</h1>
+  <div id="matches-container"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+html {
+    background-color: darkslategray;
+    background-image : url("/frontend/background.jpeg");
+  }
+body {
+    text-align: center;
+    color: green;
+}
+div{
+    color: black;
+}
+
+.match {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    width: 50%;
+    background-color: #555555b0;
+    border-radius: 10px;
+
+}
+
+.match:hover {
+    background-color: #444444b0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    width: 40%;
+    background-color: #3c5722b0;
+    border-radius: 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Match</title>
+    <link rel="stylesheet" href="submit_match.css">
+    <script defer src="cornhole.js"></script>
+    <script defer src="submit_match.js"></script>
+</head>
+
+<body>
+    <button id="back-button" onclick = "goBack()">Back</button>
+
+    <h1>Submit Match</h1>
+
+    <form id="match-form">
+        <h3>Player 1</h3>
+        <div class="player-suggestion-container">
+            <input type="text" id="player1-name" placeholder="Player 1 (you)" autocomplete="off" readonly/>
+            <div class="suggestions-box" id="player1-suggestions"></div>
+        </div>
+        <input type="number" id="player1-score" placeholder="Score" required>
+
+        <h3>Player 2</h3>
+        <div class="player-suggestion-container">
+            <input type="text" id="player2-name" placeholder="Player 2 Name" autocomplete="off">
+            <div class="suggestions-box" id="player2-suggestions"></div>
+        </div>
+        <input type="number" id="player2-score" placeholder="Player 2 Score" required>
+
+        <h3>Location & Date</h3>
+        <input type="text" id="match-location" placeholder="Location" required>
+        <input type="date" id="match-date">
+
+        <h3>Privacy Options</h3>
+        <label><input type="checkbox" id="p1-private"> Hide Player 1 Name</label><br>
+        <label><input type="checkbox" id="p2-private"> Hide Player 2 Name</label><br>
+        <label><input type="checkbox" id="score-private"> Hide Score</label><br>
+        <label><input type="checkbox" id="loc-private"> Hide Location</label><br>
+        <label><input type="checkbox" id="date-private"> Hide Date</label><br>
+        <label><input type="checkbox" id="winner-private"> Hide Winner</label><br>
+
+        <button type="submit">Submit Match</button>
+    </form>
+</body>
+
+</html>

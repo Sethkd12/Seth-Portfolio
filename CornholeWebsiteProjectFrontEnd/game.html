@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cornhole League</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="cornhole.js"></script>
+</head>
+<body>
+    <div class="search-bar-container">
+        <input type="text" id="search-input" placeholder="Search users..." autocomplete="off" />
+        <div id="search-suggestions" class="suggestions-box"></div>
+    </div>
+    <h1>Record Game</h1>
+    <form onsubmit="record(event)">
+        <label>Your Team</label>
+        <input type="number" placeholder="Score" class="game" id="s1" required>
+        <br>
+        <br>
+        <label>Opposing Team</label>
+        <input type="number" placeholder="Score" class="game" id="s2" required>
+        <br>
+        <br>
+        <button type="submit">Record Game</button>
+    </form>
+</body>
+</html>

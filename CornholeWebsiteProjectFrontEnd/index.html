@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cornhole League</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="cornhole.js"></script>
+    <img
+    id="profile-button"
+    src="./account.svg" 
+    alt="My Profile"
+    style="width:40px;height:40px;border-radius:50%;cursor:pointer;"
+  />
+</head>
+
+<body>
+    <div class="search-bar-container">
+        <input type="text" id="search-input" placeholder="Search users..." autocomplete="off" />
+        <div id="search-suggestions" class="suggestions-box"></div>
+    </div>
+    <h1>Login</h1>
+    <div id="invite-message" style="display: none; margin-bottom: 15px; padding: 10px; background-color: #4caf50; color: white; border-radius: 5px; text-align: center;">
+        You need to log in to join a league
+    </div>
+    <form onsubmit="login(event)">
+        <input type="text" placeholder="Username" class="log" id="u" required>
+        <input type="password" placeholder="Password" class="log" id="p" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    <button id="register-btn"><a href="./register.html">Register</a></button>
+    
+    <script>
+        // Check if we have an invite in the URL
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const inviteLeagueId = urlParams.get('invite');
+            const redirect = urlParams.get('redirect');
+            
+            if (inviteLeagueId && redirect === 'leagues') {
+                // Show the invite message
+                document.getElementById('invite-message').style.display = 'block';
+                
+                // Update the register link to preserve the invite parameters
+                document.getElementById('register-btn').querySelector('a').href = 
+                    `./register.html?redirect=${redirect}&invite=${inviteLeagueId}`;
+            }
+        });
+    </script>
+</body>
+
+</html>
